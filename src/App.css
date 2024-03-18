@@ -21,10 +21,24 @@ body {
 
 .card-to-do {
 	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-	padding: 25px;
+	padding: 35px;
 	margin: 25px;
 	border-radius: 20px;
 	max-width: 100%;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%; /* En pantallas más pequeñas, el contenedor ocupa el 100% del ancho de la pantalla */
+    }
+
+	.card-to-do {
+		padding: 20px;}
 }
 
 h1 {
@@ -49,10 +63,10 @@ h1 {
 }
 
 ul {
-	margin-top: 50px;
 	display: flex;
 	flex-direction: column;
 	gap: 15px;
+	margin: 50px 15px;
 }
 
 ul li {
@@ -60,7 +74,17 @@ ul li {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	gap: 20px;
+	gap: 15px;
+}
+
+@media (max-width: 768px) {
+	ul {
+		margin: 50px 0px;
+	}
+	
+	ul li {
+		gap: 9px;
+	}
 }
 
 ul li span {
@@ -107,7 +131,7 @@ ul li form {
 .btn-delete {
 	background-color: var(--rojo);
 	color: #fff;
-	padding: 15px;
+	padding: 12px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -125,7 +149,7 @@ ul li form {
 .btn-edit {
 	background-color: var(--azul);
 	color: #fff;
-	padding: 15px;
+	padding: 12px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -176,7 +200,7 @@ form {
 	border: none;
 	background-color: var(--azul);
 	color: #fff;
-	padding: 5px 40px;
+	padding: 7px 40px;
 	border-radius: 20px;
 	font-family: inherit;
 	cursor: pointer;

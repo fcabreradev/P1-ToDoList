@@ -16,6 +16,7 @@ function App() {
 
   return (
     <>
+    <div className='container'>
       <div className="card-to-do">
         <h1>Lista de Tareas</h1>
         <div className="counter-todos">
@@ -34,6 +35,7 @@ function App() {
           handleUpdateTodo={handleUpdateTodo}
         />   
       </div>
+    </div>
     </>
   )
 }

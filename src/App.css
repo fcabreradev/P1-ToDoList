@@ -16,15 +16,15 @@ body {
 	font-family: Poppins;
 	max-width: 1200px;
 	margin: 40px auto;
-	display: flex;
 	justify-content: center;
 }
 
 .card-to-do {
 	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 	padding: 25px;
+	margin: 25px;
 	border-radius: 20px;
-	width: 700px;
+	max-width: 100%;
 }
 
 h1 {
@@ -140,9 +140,18 @@ ul li form {
 	background-color: var(--azul-hover);
 }
 
+.container{}
+
 form {
 	display: flex;
 	gap: 20px;
+}
+
+.formToDo{
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .add-todo h3 {

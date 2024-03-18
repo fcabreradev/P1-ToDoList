@@ -24,7 +24,7 @@ export const TodoAdd = ({handleNewTodo}) => {
   };
 
   return (
-    <form onSubmit={onFormSubmit}>
+    <form className="formToDo" onSubmit={onFormSubmit}>
       <input
         type="text"
         className="input-add"
